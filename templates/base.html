@@ -1,0 +1,17 @@
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <title>{{event_name}} - Event Planner</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href="/events">Upcoming Events</a></li>
+        </ul>
+        <hr>
+        {% block content %}
+
+
+        {% endblock %}
+    </body>
+</html>
